@@ -15,11 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@800&display=swap" rel="stylesheet">
 
   </head>
-  <body id="bg" style="background-image: url({% static 'users/images/download.png' %});">
+  <body id="bg" style="background-color: #1C6DFF;">
   {% load static %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navbar">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">Fiji-Technologies <img src="{% static 'images/in-logo-1.svg' %}" alt="" ></a>
+          <a class="navbar-brand" href="{% url 'home' %}">Fiji-Technologies <img src="{% static 'images/fiji.jpg' %}" alt="" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -40,7 +40,7 @@
               {% else %}
                 <a href="{% url 'register' %}" class="btn" style="color: #3372a8; background-color: white;"type="submit" id="header-links"> Create Account </a>
                 <a href="{% url 'login' %}" class="btn" style="color: #3372a8; background-color: white; margin-left: 10px; "type="submit" id="header-links">Log In</a>
-              {% endif %},mbkjlbvkjlvkjbbkhbhj
+              {% endif %}
               </form>
           </div>
         </div>
