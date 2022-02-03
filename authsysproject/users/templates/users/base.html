@@ -19,16 +19,16 @@
   {% load static %}
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="main-navbar">
         <div class="container">
-          <a class="navbar-brand" href="{% url 'home' %}">Fiji-Technologies <img src="{% static 'images/fiji.jpg' %}" alt="" ></a>
+          <a class="navbar-brand" href="{% url 'home' %}">FIJI-TECHNOLOGIES <img src="{% static 'images/fiji.jpg' %}" alt="" ></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
-              <a class="nav-link" href="#">About Us</a>
-              <a class="nav-link" href="#">Services</a>
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="#about">About Us</a>
+              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#contact">Contact Us</a>
 
             </div>
 
@@ -37,7 +37,7 @@
                 <a href="{% url 'profile' %}" class="btn" style="color: blue; background-color: white;"type="submit" id="header-links"> Profile </a>
                 <a href="{% url 'logout' %}" class="btn" style="color: blue; background-color: white"type="submit" id="header-links"> Logout </a>
               {% else %}
-                <a href="{% url 'register' %}" class="btn" style="color: #3372a8; background-color: white;"type="submit" id="header-links"> Create Account </a>
+                <a href="{% url 'register' %}" class="btn" style="color: #3372a8; background-color: white;"type="submit" id="header-links"> Get Started </a>
                 <a href="{% url 'login' %}" class="btn" style="color: #3372a8; background-color: white; margin-left: 10px; "type="submit" id="header-links">Log In</a>
               {% endif %}
               </form>
