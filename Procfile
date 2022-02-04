@@ -1,0 +1,1 @@
+web gunicorn fijitech.wsgi:application --log-file -
